@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- 検索にヒットさせない -->
+        <meta name="robots" content="noindex" />
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>ポートフォリオサイト</title>
+        <meta
+            name="description"
+            content="転職を目指してデイトラで学習中のてru坊のポートフォリオサイトです。"
+        />
+
+        <!-- cssの読み込み -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__logo">てru坊の<br />Portfolio</div>
+                    <button
+                        type="button"
+                        id="js-button-drawer"
+                        class="header__menu-button"
+                    >
+                        Menu
+                    </button>
+
+                    <div id="js-drawer" class="header__contents"></div>
+                </div>
+            </header>
+        </div>
+    </body>
+</html>
