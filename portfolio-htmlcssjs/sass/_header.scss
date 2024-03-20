@@ -1,0 +1,52 @@
+@use "color";
+
+.header {
+  background-color: color.$bg-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  &__container {
+    position: relative;
+  }
+
+  &__logo {
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 20px;
+    color: color.$white;
+  }
+
+  &__menu-button {
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 30px;
+    height: 36px;
+    overflow: hidden;
+    color: transparent;
+    background: url("../img/bg_menu.png") center center no-repeat;
+    background-size: 100% auto;
+  }
+
+  &__menu-button.is-active {
+    background: url("../img/bg_menu-close.png") center center no-repeat;
+    background-size: 100% auto;
+  }
+
+  &__contents {
+    display: none;
+    height: calc(100vh - 88px);
+    border-top: 1px solid color.$white;
+    padding-top: 60px;
+  }
+
+  &__nav-item {
+    & + & {
+      margin-top: 24px;
+    }
+  }
+}
