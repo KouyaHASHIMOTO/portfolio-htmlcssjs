@@ -30,11 +30,11 @@
     color: transparent;
     background: url("../img/bg_menu.png") center center no-repeat;
     background-size: 100% auto;
-  }
 
-  &__menu-button.is-active {
-    background: url("../img/bg_menu-close.png") center center no-repeat;
-    background-size: 100% auto;
+    &.is-checked {
+      background: url("../img/bg_menu-close.png") center center no-repeat;
+      background-size: 100% auto;
+    }
   }
 
   &__contents {

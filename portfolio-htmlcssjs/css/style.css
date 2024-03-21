@@ -27,7 +27,7 @@
   background: url("../img/bg_menu.png") center center no-repeat;
   background-size: 100% auto;
 }
-.header__menu-button.is-active {
+.header__menu-button.is-checked {
   background: url("../img/bg_menu-close.png") center center no-repeat;
   background-size: 100% auto;
 }
@@ -41,9 +41,59 @@
   margin-top: 24px;
 }
 
+.fv {
+  position: relative;
+}
+.fv__contents {
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  width: 100%;
+  height: 209px;
+  background: url(../img/sp/bg_fv.png) center center no-repeat;
+  background-size: 100% auto;
+  padding: 32px;
+}
+.fv__heading-main {
+  display: block;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+.fv__heading-sub {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.section {
+  padding: 40px 0;
+}
+.section__inner {
+  padding: 0 32px;
+}
+.section__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+}
+.section__head-main {
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+.section__head-sub {
+  font-size: 11px;
+}
+
 body {
   font-family: "Oswald", "Noto Sans JP", sans-serif;
   color: #333;
+}
+body.is-fixed {
+  overflow: hidden;
 }
 
 .button {

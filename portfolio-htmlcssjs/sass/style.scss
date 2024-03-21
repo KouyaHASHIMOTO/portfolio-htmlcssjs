@@ -1,9 +1,15 @@
 @use "color";
 @use "header";
+@use "fv";
+@use "section";
 
 body {
   font-family: "Oswald", "Noto Sans JP", sans-serif;
   color: color.$cl-black;
+
+  &.is-fixed {
+    overflow: hidden;
+  }
 }
 
 .button {

@@ -1,4 +1,5 @@
 $("#js-button-drawer").on("click", function () {
-  $("#js-button-drawer").toggleClass("is-active");
+  $(this).toggleClass("is-checked");
   $("#js-drawer").slideToggle();
+  $("body").toggleClass("is-fixed");
 });
