@@ -1,3 +1,6 @@
+@use "color";
+@use "breakpoints";
+
 .section {
   padding: 40px 0;
 
@@ -9,6 +12,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__head-main {
@@ -23,5 +30,177 @@
   &__lead-text {
     font-size: 16px;
     line-height: 1.6;
+  }
+
+  &__contents {
+    margin-top: 40px;
+  }
+}
+
+.service {
+  &__list {
+  }
+
+  &__item {
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  &__item-img {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  &__item-name {
+    font-style: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.works {
+  background-color: color.$bg-light;
+  &__list {
+  }
+
+  &__item {
+    & + & {
+      margin-top: 40px;
+    }
+  }
+  &__item-img {
+    margin-bottom: 12px;
+    img {
+      box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
+    }
+  }
+
+  &__item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  &__item-link {
+    text-decoration: underline;
+    font-size: 14px;
+  }
+}
+
+.about {
+  &__container {
+  }
+
+  &__img {
+    margin-bottom: 30px;
+
+    img {
+      box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
+    }
+  }
+
+  &__text-contents {
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.6;
+
+    & + & {
+      margin-top: 1em;
+    }
+  }
+}
+
+.flow {
+  background-color: color.$bg-light;
+
+  &__list {
+    margin-top: 46px;
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid color.$cl-border;
+    padding: 46px 16px 14px;
+
+    & + & {
+      margin-top: 46px;
+    }
+  }
+
+  &__item-num {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background-color: color.$bg-dark;
+    color: color.$white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item-img {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &__item-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.message {
+  &__container {
+  }
+
+  &__img {
+    margin-bottom: 32px;
+
+    img {
+      box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
+    }
+  }
+
+  &__text-contents {
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.page-bottom {
+  color: color.$white;
+  &__item {
+    padding: 40px;
+    &--contact {
+      background-color: color.$bg-gray-l;
+    }
+
+    &--twitter {
+      background-color: color.$bg-dark;
+    }
+  }
+
+  &__button {
   }
 }

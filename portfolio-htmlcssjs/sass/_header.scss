@@ -1,4 +1,5 @@
 @use "color";
+@use "breakpoints";
 
 .header {
   background-color: color.$bg-dark;
@@ -47,6 +48,24 @@
   &__nav-item {
     & + & {
       margin-top: 24px;
+    }
+  }
+}
+
+/*--------------------------------
+// pc
+----------------------------------*/
+@include breakpoints.mq(pc) {
+  .header {
+    position: relative;
+    flex-basis: 20.8%;
+    &__menu-button {
+      display: none;
+    }
+
+    &__contents {
+      border: none;
+      display: block;
     }
   }
 }

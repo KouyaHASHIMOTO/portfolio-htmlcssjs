@@ -2,6 +2,8 @@
 @use "header";
 @use "fv";
 @use "section";
+@use "footer";
+@use "breakpoints";
 
 body {
   font-family: "Oswald", "Noto Sans JP", sans-serif;
@@ -54,5 +56,14 @@ body {
     font-size: 16px;
     color: color.$white;
     letter-spacing: 0.08em;
+  }
+}
+
+/*--------------------------------
+// pc
+----------------------------------*/
+@include breakpoints.mq(pc) {
+  .wrapper {
+    display: flex;
   }
 }
