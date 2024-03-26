@@ -37,6 +37,28 @@
   }
 }
 
+@include breakpoints.mq(pc) {
+  .section {
+    &__inner {
+      max-width: calc(880px + 32px * 2);
+      margin: 0 auto;
+    }
+
+    &__head {
+      margin-bottom: 24px;
+    }
+
+    &__head-main {
+      font-size: 60px;
+    }
+
+    &__lead-text {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+//Service
 .service {
   &__list {
   }
@@ -65,6 +87,22 @@
   }
 }
 
+@include breakpoints.mq(pc) {
+  .service {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8%;
+    }
+    &__item {
+      & + & {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+//Works
 .works {
   background-color: color.$bg-light;
   &__list {
@@ -94,6 +132,22 @@
   }
 }
 
+@include breakpoints.mq(pc) {
+  .works {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8%;
+    }
+    &__item {
+      & + & {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+//About
 .about {
   &__container {
   }
@@ -119,6 +173,20 @@
   }
 }
 
+@include breakpoints.mq(pc) {
+  .about {
+    &__text-contents {
+      width: 500px;
+    }
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 100px;
+    }
+  }
+}
+
+//Flow
 .flow {
   background-color: color.$bg-light;
 
@@ -167,6 +235,26 @@
   }
 }
 
+@include breakpoints.mq(pc) {
+  .flow {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2%;
+    }
+    &__item {
+      & + & {
+        margin-top: 0px;
+      }
+    }
+
+    &__item-text {
+      margin: 10px 0;
+    }
+  }
+}
+
+//Message
 .message {
   &__container {
   }
@@ -188,6 +276,20 @@
   }
 }
 
+@include breakpoints.mq(pc) {
+  .message {
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 80px;
+    }
+
+    &__text-contents {
+      flex-basis: 80%;
+    }
+  }
+}
+
 .page-bottom {
   color: color.$white;
   &__item {
@@ -202,5 +304,16 @@
   }
 
   &__button {
+  }
+}
+
+@include breakpoints.mq(pc) {
+  .page-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__item {
+      padding: 54px 10px;
+    }
   }
 }

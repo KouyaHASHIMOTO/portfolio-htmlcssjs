@@ -29,3 +29,18 @@
     font-size: 14px;
   }
 }
+
+@include breakpoints.mq(pc) {
+  .fv {
+    &__contents {
+      background: url(../img/bg_fv.png) center center no-repeat;
+      background-size: 100% auto;
+      bottom: 100px;
+      left: 0;
+      width: 627px;
+      height: 174px;
+      padding-top: 24px;
+      padding-left: 100px;
+    }
+  }
+}

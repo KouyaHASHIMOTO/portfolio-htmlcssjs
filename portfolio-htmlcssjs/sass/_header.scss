@@ -59,13 +59,32 @@
   .header {
     position: relative;
     flex-basis: 20.8%;
+    padding: 50px 20px;
+    width: 160px;
     &__menu-button {
       display: none;
+    }
+
+    &__logo {
+      display: block;
+      width: 120px;
+      padding: 0;
+      margin: 0 auto;
+      font-size: 28px;
+      letter-spacing: 0.1em;
+      line-height: 1.5;
     }
 
     &__contents {
       border: none;
       display: block;
+    }
+
+    &__container {
+      width: 160px;
+      margin: 0 auto;
+      position: sticky;
+      top: 50px;
     }
   }
 }
