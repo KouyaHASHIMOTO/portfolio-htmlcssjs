@@ -50,7 +50,6 @@
     -ms-flex-preferred-size: 20.8%;
         flex-basis: 20.8%;
     padding: 50px 20px;
-    width: 160px;
   }
   .header__menu-button {
     display: none;
@@ -105,7 +104,7 @@
     background-size: 100% auto;
     bottom: 100px;
     left: 0;
-    width: 627px;
+    max-width: 627px;
     height: 174px;
     padding-top: 24px;
     padding-left: 100px;
@@ -248,7 +247,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    gap: 100px;
+    gap: 20px;
   }
 }
 .flow {
@@ -334,7 +333,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    gap: 80px;
+    gap: 20px;
   }
   .message__text-contents {
     -ms-flex-preferred-size: 80%;
