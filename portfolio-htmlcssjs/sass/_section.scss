@@ -162,6 +162,9 @@
 
   &__img {
     margin-bottom: 30px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
 
     img {
       box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
@@ -184,13 +187,14 @@
 @include breakpoints.mq(pc) {
   .about {
     &__text-contents {
-      width: 400px;
+      padding-right: 30px;
     }
     &__container {
       display: flex;
 
       flex-direction: row-reverse;
-      gap: 20px;
+      justify-content: center;
+      gap: 40px;
     }
   }
 }
@@ -278,6 +282,7 @@
 
   &__img {
     margin-bottom: 32px;
+    max-width: 300px;
 
     img {
       box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);

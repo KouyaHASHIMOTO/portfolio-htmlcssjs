@@ -44,3 +44,12 @@
     }
   }
 }
+
+@include breakpoints.mq(tb) {
+  .fv {
+    &__contents {
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+}
