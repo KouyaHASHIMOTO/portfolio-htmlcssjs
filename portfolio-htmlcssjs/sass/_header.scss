@@ -2,7 +2,11 @@
 @use "breakpoints";
 
 .header {
-  background-color: color.$bg-dark;
+  background-image: url("../img/header.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
   position: fixed;
   top: 0;
   left: 0;
