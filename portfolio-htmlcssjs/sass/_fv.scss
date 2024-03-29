@@ -3,7 +3,7 @@
 .fv {
   position: relative;
 
-  &__contents {
+  .fv__contents {
     position: absolute;
     bottom: 26px;
     left: 0;
@@ -14,16 +14,17 @@
     padding: 32px;
   }
 
-  &__heading {
+  .fv__heading {
+    // ここにスタイルを記述
   }
 
-  &__heading-main {
+  .fv__heading-main {
     display: block;
     font-size: 40px;
     letter-spacing: 0.1em;
   }
 
-  &__heading-sub {
+  .fv__heading-sub {
     margin-top: 12px;
     display: block;
     font-size: 15px;
@@ -32,9 +33,9 @@
 
 @include breakpoints.mq(pc) {
   .fv {
-    &__contents {
+    .fv__contents {
       background: url(../img/bg_fv.png) center center no-repeat;
-      background-size: 100% auto;
+      background-size: cover;
       bottom: 100px;
       left: 0;
       max-width: 627px;
@@ -47,7 +48,7 @@
 
 @include breakpoints.mq(tb) {
   .fv {
-    &__contents {
+    .fv__contents {
       bottom: 50%;
       transform: translateY(50%);
     }

@@ -4,55 +4,55 @@
 .section {
   padding: 40px 0;
 
-  &__inner {
+  .section__inner {
     padding: 0 32px;
   }
 
-  &__head {
+  .section__head {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
-
-    &--center {
-      text-align: center;
-    }
   }
 
-  &__head-main {
+  .section__head.section__head--center {
+    text-align: center;
+  }
+
+  .section__head-main {
     font-size: 40px;
     letter-spacing: 0.1em;
   }
 
-  &__head-sub {
+  .section__head-sub {
     font-size: 11px;
   }
 
-  &__lead-text {
+  .section__lead-text {
     font-size: 16px;
     line-height: 1.6;
   }
 
-  &__contents {
+  .section__contents {
     margin-top: 40px;
   }
 }
 
 @include breakpoints.mq(pc) {
   .section {
-    &__inner {
+    .section__inner {
       max-width: calc(880px + 32px * 2);
       margin: 0 auto;
     }
 
-    &__head {
+    .section__head {
       margin-bottom: 24px;
     }
 
-    &__head-main {
+    .section__head-main {
       font-size: 60px;
     }
 
-    &__lead-text {
+    .section__lead-text {
       margin-bottom: 70px;
     }
   }
@@ -60,36 +60,36 @@
 
 @include breakpoints.mq(tb) {
   .section {
-    &__head-main {
+    .section__head-main {
       font-size: 54px;
     }
   }
 }
 
-//Service
 .service {
-  &__list {
+  .service__list {
   }
 
-  &__item {
-    & + & {
-      margin-top: 40px;
-    }
+  .service__item {
   }
 
-  &__item-img {
+  .service__item + .service__item {
+    margin-top: 40px;
+  }
+
+  .service__item-img {
     text-align: center;
     margin-bottom: 14px;
   }
 
-  &__item-name {
-    font-style: 14px;
+  .service__item-name {
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
   }
 
-  &__item-text {
+  .service__item-text {
     font-size: 14px;
     line-height: 1.6;
   }
@@ -97,44 +97,46 @@
 
 @include breakpoints.mq(pc) {
   .service {
-    &__list {
+    .service__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8%;
     }
-    &__item {
-      & + & {
-        margin-top: 0px;
-      }
+
+    .service__item + .service__item {
+      margin-top: 0;
     }
   }
 }
 
-//Works
 .works {
   background-color: color.$bg-light;
-  &__list {
+
+  .works__list {
   }
 
-  &__item {
-    & + & {
-      margin-top: 40px;
-    }
+  .works__item {
   }
-  &__item-img {
+
+  .works__item + .works__item {
+    margin-top: 40px;
+  }
+
+  .works__item-img {
     margin-bottom: 12px;
+
     img {
       box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
     }
   }
 
-  &__item-name {
+  .works__item-name {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 6px;
   }
 
-  &__item-link {
+  .works__item-link {
     text-decoration: underline;
     font-size: 14px;
   }
@@ -142,25 +144,23 @@
 
 @include breakpoints.mq(pc) {
   .works {
-    &__list {
+    .works__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8%;
     }
-    &__item {
-      & + & {
-        margin-top: 0px;
-      }
+
+    .works__item + .works__item {
+      margin-top: 0;
     }
   }
 }
 
-//About
 .about {
-  &__container {
+  .about__container {
   }
 
-  &__img {
+  .about__img {
     margin-bottom: 30px;
     min-width: 200px;
     display: flex;
@@ -171,27 +171,27 @@
     }
   }
 
-  &__text-contents {
+  .about__text-contents {
   }
 
-  &__text {
+  .about__text {
     font-size: 16px;
     line-height: 1.6;
+  }
 
-    & + & {
-      margin-top: 1em;
-    }
+  .about__text + .about__text {
+    margin-top: 1em;
   }
 }
 
 @include breakpoints.mq(pc) {
   .about {
-    &__text-contents {
+    .about__text-contents {
       padding-right: 30px;
     }
-    &__container {
-      display: flex;
 
+    .about__container {
+      display: flex;
       flex-direction: row-reverse;
       justify-content: center;
       gap: 40px;
@@ -199,25 +199,24 @@
   }
 }
 
-//Flow
 .flow {
   background-color: color.$bg-light;
 
-  &__list {
+  .flow__list {
     margin-top: 46px;
   }
 
-  &__item {
+  .flow__item {
     position: relative;
     border: 1px solid color.$cl-border;
     padding: 46px 16px 14px;
-
-    & + & {
-      margin-top: 46px;
-    }
   }
 
-  &__item-num {
+  .flow__item + .flow__item {
+    margin-top: 46px;
+  }
+
+  .flow__item-num {
     position: absolute;
     top: -24px;
     left: 50%;
@@ -231,18 +230,19 @@
     align-items: center;
     justify-content: center;
   }
-  &__item-img {
+
+  .flow__item-img {
     margin-bottom: 24px;
     text-align: center;
   }
 
-  &__item-name {
+  .flow__item-name {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
   }
 
-  &__item-text {
+  .flow__item-text {
     font-size: 14px;
     line-height: 1.6;
   }
@@ -250,18 +250,17 @@
 
 @include breakpoints.mq(pc) {
   .flow {
-    &__list {
+    .flow__list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2%;
     }
-    &__item {
-      & + & {
-        margin-top: 0px;
-      }
+
+    .flow__item + .flow__item {
+      margin-top: 0;
     }
 
-    &__item-text {
+    .flow__item-text {
       margin: 10px 0;
     }
   }
@@ -269,18 +268,18 @@
 
 @include breakpoints.mq(tb) {
   .flow {
-    &__list {
+    .flow__list {
       grid-template-columns: repeat(2, 1fr);
       gap: 40px 16px;
     }
   }
 }
-//Message
+
 .message {
-  &__container {
+  .message__container {
   }
 
-  &__img {
+  .message__img {
     margin-bottom: 32px;
     max-width: 300px;
 
@@ -289,10 +288,10 @@
     }
   }
 
-  &__text-contents {
+  .message__text-contents {
   }
 
-  &__text {
+  .message__text {
     font-size: 16px;
     line-height: 1.6;
   }
@@ -300,13 +299,13 @@
 
 @include breakpoints.mq(pc) {
   .message {
-    &__container {
+    .message__container {
       display: flex;
       flex-direction: row-reverse;
       gap: 40px;
     }
 
-    &__text-contents {
+    .message__text-contents {
       flex-basis: 80%;
       min-width: 250px;
     }
@@ -315,18 +314,20 @@
 
 .page-bottom {
   color: color.$white;
-  &__item {
-    padding: 40px;
-    &--contact {
-      background-color: color.$bg-gray-l;
-    }
 
-    &--twitter {
-      background-color: color.$bg-dark;
-    }
+  .page-bottom__item {
+    padding: 40px;
   }
 
-  &__button {
+  .page-bottom__item--contact {
+    background-color: color.$bg-gray-l;
+  }
+
+  .page-bottom__item--twitter {
+    background-color: color.$bg-dark;
+  }
+
+  .page-bottom__button {
   }
 }
 
@@ -335,7 +336,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    &__item {
+    .page-bottom__item {
       padding: 54px 10px;
     }
   }

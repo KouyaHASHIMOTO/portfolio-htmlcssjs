@@ -2,6 +2,7 @@
 @use "breakpoints";
 
 .header {
+  // background-color: color.$bg-dark;
   background-image: url("../img/header.png");
   background-attachment: fixed;
   background-size: cover;
@@ -13,18 +14,18 @@
   width: 100%;
   z-index: 999;
 
-  &__container {
+  .header__container {
     position: relative;
   }
 
-  &__logo {
+  .header__logo {
     display: inline-block;
     padding: 14px 24px;
     font-size: 20px;
     color: color.$white;
   }
 
-  &__menu-button {
+  .header__menu-button {
     border: none;
     position: absolute;
     top: 24px;
@@ -42,34 +43,30 @@
     }
   }
 
-  &__contents {
+  .header__contents {
     display: none;
     height: calc(100vh - 88px);
     border-top: 1px solid color.$white;
-    padding-top: 60px;
   }
 
-  &__nav-item {
+  .header__nav-item {
     & + & {
       margin-top: 24px;
     }
   }
 }
 
-/*--------------------------------
-// pc
-----------------------------------*/
 @include breakpoints.mq(pc) {
   .header {
     position: relative;
     flex-basis: 20.8%;
     padding: 50px 20px;
 
-    &__menu-button {
+    .header__menu-button {
       display: none;
     }
 
-    &__logo {
+    .header__logo {
       display: block;
       width: 120px;
       padding: 0;
@@ -79,12 +76,12 @@
       line-height: 1.5;
     }
 
-    &__contents {
+    .header__contents {
       border: none;
       display: block;
     }
 
-    &__container {
+    .header__container {
       width: 160px;
       margin: 0 auto;
       position: sticky;

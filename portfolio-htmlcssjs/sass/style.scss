@@ -4,6 +4,7 @@
 @use "section";
 @use "footer";
 @use "breakpoints";
+
 img {
   max-width: 100%;
   height: auto;
@@ -22,50 +23,47 @@ body {
   display: flex;
   align-items: center;
   padding: 6px 10px 6px 30px;
-  width: 160px;
-  margin: 0 auto;
+  gap: 20px;
+  background: url("../img/linkedin_profile_image.pn") center center no-repeat;
 
-  &--bg {
-    background-color: color.$white;
+  // .button--bg & {
+  //     background-color: color.$white;
+  //   }
 
-    .button__text {
-      color: color.$bg-dark;
-    }
-  }
+  // .button--border & {
+  //   border: 1px solid color.$white;
+  // }
 
-  &--border {
-    border: 1px solid color.$white;
-
-    .button__text {
-      color: color.$white;
-    }
-  }
-
-  &__icon {
-    width: 24px;
+  .button__icon {
+    width: 50px;
     display: flex;
     align-items: center;
   }
 
-  &__icon-path {
+  .button__icon-path {
     fill: color.$white;
 
-    &--contact {
+    &.button__icon-path--contact {
       fill: color.$bg-dark;
     }
   }
 
-  &__text {
+  .button__text {
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 40px;
     color: color.$white;
     letter-spacing: 0.08em;
   }
+
+  .button--bg .button__text {
+    color: color.$bg-dark;
+  }
+
+  .button--border .button__text {
+    color: color.$white;
+  }
 }
 
-/*--------------------------------
-// pc
-----------------------------------*/
 @include breakpoints.mq(pc) {
   .wrapper {
     display: flex;
@@ -78,31 +76,16 @@ body {
   .button {
     transition: background 0.3s, color 0.3s, opacity 0.3s;
 
-    &--red {
-      &:hover {
-        background-color: rgb(238, 101, 101);
-      }
+    &.button--red:hover {
+      background-color: rgb(238, 101, 101);
     }
 
-    &--blue {
-      &:hover {
-        background-color: rgb(101, 115, 238);
-      }
+    &.button--blue:hover {
+      background-color: rgb(101, 115, 238);
     }
-    &--bg {
-      &:hover {
-        opacity: 0.7;
-      }
+
+    &.button--bg:hover {
+      opacity: 0.7;
     }
   }
 }
-
-// &:hover {
-//   background-color: color.$white;
-
-//   .button__icon-path {
-//     fill: color.$bg-dark;
-//   }
-//   .button__text {
-//     color: color.$bg-dark;
-//   }
