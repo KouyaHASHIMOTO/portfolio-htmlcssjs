@@ -15,10 +15,25 @@
       rel="stylesheet"
     />
 
-    <title>ポートフォリオサイト</title>
+    <title>てru坊のポートフォリオ</title>
     <meta
       name="description"
       content="転職を目指してデイトラで学習中のてru坊のポートフォリオサイトです。"
+    />
+
+    <!-- ツイッターカード -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@てru坊@Web制作/デイトラ" />
+    <!-- @の後に正確なツイッターユーザー名を入れる -->
+    <meta property="og:url" content="https://terubou-web.com/" />
+    <meta property="og:title" content="てru坊のポートフォリオ" />
+    <meta
+      property="og:description"
+      content="提供しているサービスや実績の紹介、自己紹介などをしています"
+    />
+    <meta
+      property="og:image"
+      content="https://terubou-web.com/img/terubou_portfolio.png"
     />
 
     <!-- cssの読み込み -->
@@ -41,13 +56,13 @@
           <div id="js-drawer" class="header__contents">
             <nav class="header__nav">
               <ul class="header__nav-list">
-                <!-- <li>
-                  <div class="header__logo">てru坊の<br />Portfolio</div>
-                </li> -->
                 <li class="header__nav-item">
-                  <a href="#service" class="header__nav-link button">
+                  <a
+                    href="#service"
+                    class="header__nav-link button button--red"
+                  >
                     <span class="button__icon">
-                      <img src="./img/repair-shop.png" alt="" />
+                      <img src="./img/repair-shop.png" alt="提供サービス" />
                     </span>
                     <span class="button__text">Service -</span>
                   </a>
@@ -55,78 +70,47 @@
                 <li class="header__nav-item">
                   <a href="#works" class="header__nav-link button button--blue">
                     <span class="button__icon">
-                      <img src="./img/browsing.png" alt="" />
+                      <img src="./img/browsing.png" alt="実績紹介" />
                     </span>
                     <span class="button__text">Works -</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#about" class="header__nav-link button">
+                  <a
+                    href="#about"
+                    class="header__nav-link button button--yellow"
+                  >
                     <span class="button__icon">
-                      <img src="./img/id-card.png" alt="" />
+                      <img src="./img/id-card.png" alt="私について" />
                     </span>
                     <span class="button__text">About -</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#flow" class="header__nav-link button">
+                  <a href="#flow" class="header__nav-link button button--green">
                     <span class="button__icon">
-                      <!-- <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.43454 7.15642C8.7598 7.47765 8.7598 8.00275 8.43455 8.32398L3.65356 13.0459C3.13521 13.5578 2.25649 13.1906 2.25649 12.4621L2.25649 3.01832C2.25649 2.28979 3.13521 1.92261 3.65355 2.43454L8.43454 7.15642Z"
-                          fill="white"
-                        />
-                        <path
-                          d="M15.4089 7.15642C15.7342 7.47765 15.7342 8.00275 15.4089 8.32398L10.6279 13.0459C10.1096 13.5578 9.23085 13.1906 9.23085 12.4621L9.23085 3.01832C9.23085 2.28979 10.1096 1.92261 10.6279 2.43454L15.4089 7.15642Z"
-                          class="button__icon-path"
-                        />
-                      </svg> -->
-                      <img src="./img/scheme.png" alt="" />
+                      <img src="./img/scheme.png" alt="作業の流れ" />
                     </span>
                     <span class="button__text">Work flow -</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#message" class="header__nav-link button">
+                  <a
+                    href="#message"
+                    class="header__nav-link button button--orange"
+                  >
                     <span class="button__icon">
-                      <!-- <svg
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.502817 8.41785C-0.203433 8.81822 -0.137808 9.88587 0.615317 10.1962L4.99969 12.0119V15.2179C4.99969 15.7797 5.45594 16.2328 6.02157 16.2328C6.32469 16.2328 6.61219 16.0994 6.80594 15.8666L8.74344 13.5606L12.6153 15.1621C13.2059 15.4073 13.8903 15.0224 13.9872 14.3955L15.9872 1.4843C16.0466 1.10876 15.8809 0.730116 15.5653 0.515964C15.2497 0.301812 14.8372 0.28319 14.5028 0.472513L0.502817 8.41785ZM2.13094 9.20928L12.8028 3.15406L5.94032 10.7704L5.97782 10.8014L2.13094 9.20928ZM12.6028 13.5451L7.39657 11.388L14.0872 3.96101L12.6028 13.5451Z"
-                          class="button__icon-path"
-                        />
-                      </svg> -->;
-                      <img src="./img/email.png" alt="" />
+                      <img src="./img/email.png" alt="ご依頼をお考えの方へ" />
                     </span>
                     <span class="button__text">Message -</span>
                   </a>
                 </li>
                 <li class="header__nav-item">
-                  <a href="#contact" class="header__nav-link button button--bg">
+                  <a
+                    href="#contact"
+                    class="header__nav-link button button--bg button--purple"
+                  >
                     <span class="button__icon">
-                      <!-- <svg
-                        width="20"
-                        height="16"
-                        viewBox="0 0 20 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 2.28406C2.15625 2.28406 1.875 2.56339 1.875 2.90479V3.76217L8.61328 9.25563C9.42188 9.91515 10.582 9.91515 11.3906 9.25563L18.125 3.76217V2.90479C18.125 2.56339 17.8438 2.28406 17.5 2.28406H2.5ZM1.875 6.17138V12.8365C1.875 13.1779 2.15625 13.4572 2.5 13.4572H17.5C17.8438 13.4572 18.125 13.1779 18.125 12.8365V6.17138L12.5781 10.6949C11.0781 11.917 8.91797 11.917 7.42188 10.6949L1.875 6.17138ZM0 2.90479C0 1.53531 1.12109 0.421875 2.5 0.421875H17.5C18.8789 0.421875 20 1.53531 20 2.90479V12.8365C20 14.2059 18.8789 15.3194 17.5 15.3194H2.5C1.12109 15.3194 0 14.2059 0 12.8365V2.90479Z"
-                          class="button__icon-path button__icon-path--contact"
-                        />
-                      </svg> -->
                       <img src="./img/chat.png" alt="" />
                     </span>
                     <span class="button__text">Contact -</span>
@@ -135,25 +119,19 @@
                 <li class="header__nav-item">
                   <a
                     href="#twitter"
-                    class="header__nav-link button button--border"
+                    class="header__nav-link button button--border button--light-blue"
                   >
                     <span class="button__icon">
-                      <!-- <svg
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17.9441 6.40799C17.9568 6.58444 17.9568 6.76092 17.9568 6.93736C17.9568 12.3191 13.8325 18.5201 6.29441 18.5201C3.97207 18.5201 1.81473 17.8521 0 16.6926C0.329961 16.7304 0.647187 16.743 0.989844 16.743C2.90605 16.743 4.67004 16.1002 6.07867 15.0037C4.27664 14.9659 2.76648 13.7937 2.24617 12.1805C2.5 12.2183 2.75379 12.2435 3.02031 12.2435C3.38832 12.2435 3.75637 12.193 4.09898 12.1049C2.22082 11.7267 0.812148 10.0883 0.812148 8.10949V8.05909C1.35781 8.36158 1.99238 8.55063 2.66492 8.57581C1.56086 7.84479 0.837539 6.59704 0.837539 5.18543C0.837539 4.42922 1.04055 3.73602 1.3959 3.13105C3.41367 5.60136 6.44668 7.21459 9.84766 7.39107C9.78422 7.08858 9.74613 6.77353 9.74613 6.45843C9.74613 4.21496 11.5736 2.38745 13.8451 2.38745C15.0253 2.38745 16.0913 2.87899 16.84 3.67302C17.7664 3.49658 18.6547 3.15626 19.4416 2.68994C19.137 3.63523 18.4898 4.42926 17.6395 4.93337C18.4644 4.84519 19.2639 4.61827 19.9999 4.30322C19.4416 5.10981 18.7436 5.82819 17.9441 6.40799Z"
-                          class="button__icon-path"
-                        />
-                      </svg> -->;
                       <img src="./img/twitter.png" alt="" />
                     </span>
                     <span class="button__text">Twitter -</span>
                   </a>
+                </li>
+                <li>
+                  <!-- <div class="header__logo">てru坊の<br />Portfolio</div> -->
+                  <div class="header__img">
+                    <img src="./img/logo_transparent.png" alt="自身のロゴ" />
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -165,8 +143,9 @@
         <div class="fv">
           <picture class="fv__img">
             <source media="(min-width:768px)" srcset="./img/top.png" />
-            <img src="./img/sp/top.png" alt="" />
+            <img src="./img/sp/top.png" alt="トップイメージ" />
           </picture>
+          <img class="twitter-img" src="./img/terubou_portfolio.png" alt="" />
           <div class="fv__contents">
             <h1 class="fv__heading">
               <span class="fv__heading-main">Web Corder -</span>
@@ -372,9 +351,9 @@
               class="page-bottom__button button button--border"
             >
               <span class="button__icon"
-                ><img src="./img/chat.png" alt="" />
+                ><img src="./img/chat.png" alt="お問い合わせ" />
               </span>
-              <span class="button__text">Contact -</span>
+              <span class="bottom-button__text">Contact -</span>
             </a>
           </div>
           <div class="page-bottom__item page-bottom__item--twitter">
@@ -383,14 +362,14 @@
               <span class="section__head-sub">ツイッター</span>
             </h2>
             <a
-              href="#"
+              href="https://twitter.com/hashi_web"
               target="_blank"
               class="page-bottom__button button button--border"
             >
               <span class="button__icon"
-                ><img src="./img/twitter.png" alt="" />
+                ><img src="./img/twitter.png" alt="ツイッター" />
               </span>
-              <span class="button__text">Twitter -</span>
+              <span class="bottom-button__text">Twitter -</span>
             </a>
           </div>
         </div>

@@ -275,6 +275,8 @@
   }
 }
 
+//message
+
 .message {
   .message__container {
   }
@@ -287,6 +289,49 @@
       box-shadow: 0 4px 15px 0 rgba(color.$black, 0.15);
     }
   }
+}
+
+.page-bottom {
+  color: color.$white;
+  .page-bottom__item--contact {
+    background-color: color.$bg-gray-l;
+  }
+
+  .page-bottom__item--twitter {
+    background-color: color.$bg-dark;
+  }
+
+  .page-bottom__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: center;
+    width: 200px;
+  }
+
+  .button--border {
+    border: 1px solid #fff;
+  }
+
+  .bottom-button__text {
+    letter-spacing: 0.08em;
+  }
+
+  .page-bottom__item {
+    padding: 40px;
+  }
+
+  .section__head-main {
+    font-size: 40px;
+    letter-spacing: 0.1em;
+  }
+
+  .section__head-sub {
+    font-size: 11px;
+  }
 
   .message__text-contents {
   }
@@ -295,9 +340,31 @@
     font-size: 16px;
     line-height: 1.6;
   }
+
+  .section__head--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button__icon > img {
+    width: 40px;
+  }
 }
 
 @include breakpoints.mq(pc) {
+  .button {
+    &.page-bottom__button {
+      margin: 0 auto;
+
+      padding: 5px 10px;
+    }
+
+    .bottom-button__text {
+      font-size: 16px;
+      letter-spacing: 0.08em;
+    }
+  }
   .message {
     .message__container {
       display: flex;
@@ -310,34 +377,46 @@
       min-width: 250px;
     }
   }
-}
 
-.page-bottom {
-  color: color.$white;
-
-  .page-bottom__item {
-    padding: 40px;
-  }
-
-  .page-bottom__item--contact {
-    background-color: color.$bg-gray-l;
-  }
-
-  .page-bottom__item--twitter {
-    background-color: color.$bg-dark;
-  }
-
-  .page-bottom__button {
-  }
-}
-
-@include breakpoints.mq(pc) {
   .page-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    color: color.$white;
+
+    .page-bottom__item {
+      padding: 40px;
+    }
+
+    .section__head-main {
+      font-size: 60px;
+      letter-spacing: 0.1em;
+    }
+
+    .section__head-sub {
+      font-size: 11px;
+    }
 
     .page-bottom__item {
       padding: 54px 10px;
     }
+
+    .page-bottom__item--contact {
+      background-color: color.$bg-gray-l;
+    }
+
+    .page-bottom__item--twitter {
+      background-color: color.$bg-dark;
+    }
+
+    .page-bottom__button {
+      margin-top: 10px;
+      display: flex;
+    }
+  }
+
+  .section__head--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

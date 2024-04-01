@@ -29,6 +29,10 @@
     display: block;
     font-size: 15px;
   }
+
+  .twitter-img {
+    display: none;
+  }
 }
 
 @include breakpoints.mq(pc) {
