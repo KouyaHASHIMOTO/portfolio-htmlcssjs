@@ -166,6 +166,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .fv {
+    background: currentColor;
+    text-align: center;
+  }
+  .fv img {
+    width: 80%;
+  }
   .fv .fv__contents {
     background: url(../img/bg_fv.png) center center no-repeat;
     background-size: cover;
@@ -565,9 +572,13 @@ body.is-fixed {
   overflow: hidden;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .button {
   padding: 6px 10px 6px 30px;
-  background: url("../img/linkedin_profile_image.pn") center center no-repeat;
+  background: url("../img/linkedin_profile_image.png") center center no-repeat;
 }
 .button .button__icon-path {
   fill: #fff;

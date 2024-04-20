@@ -2,7 +2,6 @@
 
 .fv {
   position: relative;
-
   .fv__contents {
     position: absolute;
     bottom: 26px;
@@ -12,10 +11,6 @@
     background: url(../img/sp/bg_fv.png) center center no-repeat;
     background-size: 100% auto;
     padding: 32px;
-  }
-
-  .fv__heading {
-    // ここにスタイルを記述
   }
 
   .fv__heading-main {
@@ -37,6 +32,11 @@
 
 @include breakpoints.mq(pc) {
   .fv {
+    background: currentColor;
+    text-align: center;
+    img {
+      width: 80%;
+    }
     .fv__contents {
       background: url(../img/bg_fv.png) center center no-repeat;
       background-size: cover;

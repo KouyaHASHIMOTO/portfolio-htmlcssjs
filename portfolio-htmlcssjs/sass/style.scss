@@ -19,18 +19,13 @@ body {
   }
 }
 
+body {
+  background-color: color.$bg-light;
+}
+
 .button {
   padding: 6px 10px 6px 30px;
-
-  background: url("../img/linkedin_profile_image.pn") center center no-repeat;
-
-  // .button--bg & {
-  //     background-color: color.$white;
-  //   }
-
-  // .button--border & {
-  //   border: 1px solid color.$white;
-  // }
+  background: url("../img/linkedin_profile_image.png") center center no-repeat;
 
   .button__icon-path {
     fill: color.$white;
@@ -80,63 +75,63 @@ body {
     .button__text {
       font-size: 25px;
       text-align: center;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+      text-shadow: 1px 1px 1px rgb(0 0 0 / 100%);
     }
 
     &.button--red {
-      background-color: rgb(255, 101, 101);
+      background-color: rgb(255 101 101);
     }
 
     &.button--red:hover {
-      background-color: rgb(235, 58, 58);
+      background-color: rgb(235 58 58);
     }
 
     &.button--blue {
-      background-color: rgb(127, 152, 226);
+      background-color: rgb(127 152 226);
     }
 
     &.button--blue:hover {
-      background-color: rgb(87, 121, 223);
+      background-color: rgb(87 121 223);
     }
 
     &.button--yellow {
-      background-color: rgb(222, 222, 122);
+      background-color: rgb(222 222 122);
     }
 
     &.button--yellow:hover {
-      background-color: rgb(224, 224, 0);
+      background-color: rgb(224 224 0);
     }
 
     &.button--green {
-      background-color: rgb(122, 222, 122);
+      background-color: rgb(122 222 122);
     }
 
     &.button--green:hover {
-      background-color: rgb(0, 224, 0);
+      background-color: rgb(0 224 0);
     }
 
     &.button--orange {
-      background-color: rgb(255, 195, 111);
+      background-color: rgb(255 195 111);
     }
 
     &.button--orange:hover {
-      background-color: rgb(255, 175, 71);
+      background-color: rgb(255 175 71);
     }
 
     &.button--purple {
-      background-color: rgb(191, 127, 191);
+      background-color: rgb(191 127 191);
     }
 
     &.button--purple:hover {
-      background-color: rgb(173, 91, 173);
+      background-color: rgb(173 91 173);
     }
 
     &.button--light-blue {
-      background-color: rgb(127, 179, 191);
+      background-color: rgb(127 179 191);
     }
 
     &.button--light-blue:hover {
-      background-color: rgb(59, 149, 172);
+      background-color: rgb(59 149 172);
     }
   }
 }
